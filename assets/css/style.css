@@ -57,14 +57,14 @@ a,a:hover,button {
   outline: none !important;
 }
 .my-6{
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .mt-6{
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .mb-6{
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .t-green{
   color: #3cb371;
@@ -127,7 +127,7 @@ a,a:hover,button {
 }
 .heading-meta-container .description{
   font-weight: 300;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
 }
 .heading-meta-container .description::before {
   width: 26px;
@@ -531,7 +531,9 @@ header .navbar-brand b {
   line-height: 1.618;
 }
 .hero .mCSB_container {
-  overflow: initial;
+  /* overflow: initial; */
+  overflow: hidden;
+
 }
 .hero-image img{
   display: inline-block;
@@ -552,7 +554,7 @@ header .navbar-brand b {
   border-radius: 20px;
   display: inline-block;
   font-size: 16px;
-  padding: 10px 30px; 
+  padding: 10px 30px;
 }
 .extend-icon{
   position: absolute;
@@ -1962,7 +1964,7 @@ textarea:-moz-placeholder {
  }
   .mobile-menu .list-group-item{
     border:none;
-    margin-bottom: 0.25rem 
+    margin-bottom: 0.25rem
  }
   .mobile-menu .list-group-item a{
     border:none;
@@ -2060,8 +2062,8 @@ body.dark-arshia , .dark-arshia .ajax-page-content{
   color: #fff;
 }
 .dark-arshia .personal-info li small , .dark-arshia .services-description  ,
-.dark-arshia .portfolio .portfolio-filter li a , .dark-arshia .blog-header ~ p , 
-.dark-arshia .follow-label , .dark-arshia .social a , .dark-arshia .count-icon ~ p, 
+.dark-arshia .portfolio .portfolio-filter li a , .dark-arshia .blog-header ~ p ,
+.dark-arshia .follow-label , .dark-arshia .social a , .dark-arshia .count-icon ~ p,
 .dark-arshia .language-skill h6 span , .dark-arshia .timeline-content p ,
 .dark-arshia .aside-item-portfolio ul li ,.dark-arshia .blog-single .entry-meta ul li a ,
 .dark-arshia .blog-single .comment-author p a , .dark-arshia .menu li a span ,
@@ -2069,7 +2071,7 @@ body.dark-arshia , .dark-arshia .ajax-page-content{
   color: #cbccce;
 }
 .dark-arshia .text-muted{
-  color: #cbccce !important;  
+  color: #cbccce !important;
 }
 .dark-arshia .portfolio .portfolio-content h6 ,.dark-arshia .blog-header , .dark-arshia .primary-button ,
  .dark-arshia .primary-button:hover{

@@ -788,10 +788,28 @@ header .navbar-brand b {
   transform: scale(1.5);
 }
 /*------------------------- Portfolio -------------------------*/
-.portfolio-item{
-  /* margin-bottom: 30px; */
+
+
+.portfolioMain {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+}
+
+.portfolio-box {
+  /* width: 150%; */
+  /* margin-right: 10%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.portfolio-item{
+  margin-bottom: 30px;
+
 }
 .portfolio .portfolio-filter{
   margin-bottom: 32px;

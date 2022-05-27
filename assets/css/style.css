@@ -531,7 +531,7 @@ header .navbar-brand b {
 
 .homeRow {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .hero .hero-center {
   position: relative;

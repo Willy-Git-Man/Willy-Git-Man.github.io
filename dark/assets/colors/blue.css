@@ -174,7 +174,7 @@ header, .right-side {
 /*------------------------- BLOG -------------------------*/
 .blog-icon{
   background-color: rgba(0, 0, 0, 0.4);
-} 
+}
 .blog-header, .blog-header ~ p{
   color: var(--bs-body-color);
 }

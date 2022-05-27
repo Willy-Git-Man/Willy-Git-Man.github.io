@@ -450,7 +450,7 @@ header .navbar-brand b {
   left: calc(5% + 95px);
 }
 .left-side {
-  width: 80px;
+  /* width: 80px; */
   border-radius: 1.25rem;
   left: 5%;
   position: fixed;
@@ -458,37 +458,43 @@ header .navbar-brand b {
   top: 10%;
   z-index: 10;
   text-align: center;
-  padding-top: 16px;
+  /* padding-top: 16px; */
+  overflow: hidden;
 }
 .left-side img {
   width: 60px;
   height: auto;
+  /* height: 80%; */
   border-radius: 50%;
 }
 
 
+
 .left-side h1 {
   font-size: 12px;
-  padding: 5px 0;
+  /* padding: 5px 0; */
 }
 .left-side .menu {
-  position: relative;
-  display: block;
-  overflow: hidden;
+  /* position: relative; */
+  /* display: block; */
+  /* overflow: hidden; */
 }
 .left-side .menu .list-group-item {
   width: 100px;
+
   position: absolute;
 }
 .left-side .menu-align{
-  height:160px;
+  /* height:160px; */
+  /* margin-top: 250px; */
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
+  margin-top: 10%;
   bottom: 0;
   overflow: hidden;
 }
 .menu-footer{
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   left: 50%;
   width: 100%;
@@ -521,6 +527,11 @@ header .navbar-brand b {
   position: relative;
   z-index: 1;
   overflow: none;
+}
+
+.homeRow {
+  display: flex;
+  justify-content: space-between;
 }
 .hero .hero-center {
   position: relative;

@@ -789,7 +789,9 @@ header .navbar-brand b {
 }
 /*------------------------- Portfolio -------------------------*/
 .portfolio-item{
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  display: flex;
+  flex-direction: column;
 }
 .portfolio .portfolio-filter{
   margin-bottom: 32px;

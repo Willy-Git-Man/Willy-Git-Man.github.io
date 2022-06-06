@@ -48,7 +48,7 @@ $window.on("popstate", function(){
     }
 
     else if($lastHash == 0){
-        
+
         var func = animateRandom();
 
         var $value = location.hash.replace('#', '');
@@ -74,38 +74,38 @@ $window.on("popstate", function(){
          ($id == $first && !($thisId == $last))){
             openMenu();
             if($window.width()<992){
-                $("#main > section.active").addClass(func[1]).removeClass("active");    
+                $("#main > section.active").addClass(func[1]).removeClass("active");
             $main.children($id).addClass('active ' + func[0]);
             }
             else{
-                $("#main > section.active").removeClass("active");      
+                $("#main > section.active").removeClass("active");
                 $main.children($id).addClass('active');
             }
-            
+
             $('#main > section.active').css({width: '100%'});
         }
         else if( ($id != $last && $id != $first  && ($thisId == $first || $thisId == $last ))){
             closeMenu();
             if($window.width()<992){
-                $("#main > section.active").addClass(func[1]).removeClass("active");    
+                $("#main > section.active").addClass(func[1]).removeClass("active");
             $main.children($id).addClass('active ' + func[0]);
             }
             else{
-                $("#main > section.active").removeClass("active");      
+                $("#main > section.active").removeClass("active");
                 $main.children($id).addClass('active');
             }
         }
-        else if(  ($id == $last && $thisId == $first ) || 
+        else if(  ($id == $last && $thisId == $first ) ||
         ($id == $first && $thisId == $last ) ) {
-            $("#main > section.active").addClass(func[1]).removeClass("active");    
+            $("#main > section.active").addClass(func[1]).removeClass("active");
             $main.children($id).addClass('active ' + func[0]);
         }
-        else if(  ($id != $last && $thisId != $first ) || 
+        else if(  ($id != $last && $thisId != $first ) ||
         ($id != $first && $thisId != $last ) ) {
-            $("#main > section.active").addClass(func[1]).removeClass("active");    
+            $("#main > section.active").addClass(func[1]).removeClass("active");
             $main.children($id).addClass('active ' + func[0]);
         }
-        
+
 
     }
 });
@@ -146,7 +146,7 @@ function pagePreloader() {
     setTimeout(function() {
         preloader.remove();
     }, 1000);
-    
+
 }
 
 /*-------------------------  Custom Scrollbar  -------------------------*/
@@ -209,7 +209,7 @@ function skills() {
             percent.countTo();
 
         });
-        
+
     }
 }
 
@@ -290,7 +290,7 @@ function openMenu() {
 
     var childrenCount = $(".left-side .menu .list-group-item").length;
     var windowWidth = ($window.width()>1440 ? 1440 : $window.width());
-    
+
     if (windowWidth > 991) {
         $(".menu-align").animate({
             position: "absolute",
@@ -409,7 +409,7 @@ function sidebarMenu() {
     $menuLink.on("click", function() {
         var func = animateRandom();
         var $id = $(this).attr('href');
-        var $thisId = '#' + $("#main > section.active").attr('id'); 
+        var $thisId = '#' + $("#main > section.active").attr('id');
         var not_allowed = [$first, $last];
 
         if (not_allowed.indexOf($id) > -1 || not_allowed.indexOf($thisId) > -1) {
@@ -419,7 +419,7 @@ function sidebarMenu() {
                 $(this).addClass('active');
                 $("#main > section.active").addClass(func[1]).removeClass("active");
                 $main.children($id).addClass('active ' + func[0]);
-            } 
+            }
             else if($window.width()<992){
                 $(".menu > li a").removeClass("active");
                 $(this).addClass('active');
@@ -478,7 +478,7 @@ function sidebarMenu() {
 
 
         }
-        
+
         $lastHash = 1;
 
 
@@ -518,7 +518,7 @@ function sidebarMenu() {
                         $("#main > section.active").addClass(func[1]).removeClass("active");
                         $main.children($id).addClass('active ' + func[0]);
                     }
-  
+
                 })
                 $(this).removeClass('active');
             });
@@ -557,7 +557,7 @@ function sidebarMenu() {
                         var $id = $(this).attr('href');
                         changeWindowLocation($id);
                         $("main > section.active").removeClass("active");
-                        $main.children($id).addClass('active ');    
+                        $main.children($id).addClass('active ');
                     }
                     else{
                         $(this).addClass('active');
@@ -859,9 +859,9 @@ function mapInit() {
 /*-------------------------  Mouse Magic Cursor  -------------------------*/
 
 function mouseMagicCursor(){
-	
+
     "use strict";
-	
+
     var mouseCursor = $(".m-magic-cursor");
     if (mouseCursor.length && $window.width()>991) {
         if ($("body")) {

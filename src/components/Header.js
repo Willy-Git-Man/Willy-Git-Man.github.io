@@ -51,14 +51,14 @@ function Header() {
           </li>
           <li>
             <NavLink to="/portfolios">
-              <span>Portfolios</span>
+              <span>Portfolio</span>
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/blogs">
               <span>Blogs</span>
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/contact">
               <span>Contact</span>
@@ -66,15 +66,15 @@ function Header() {
           </li>
         </ul>
         <p className="mi-header-copyright">
-          &copy; {new Date().getFullYear()}{" "}
+          {/* &copy; {new Date().getFullYear()}{" "} */}
           <b>
-            <a
+            {/* <a
               rel="noopener noreferrer"
               target="_blank"
               href="https://nuclearthemes.com"
             >
               NuclearThemes
-            </a>
+            </a> */}
           </b>
         </p>
       </div>

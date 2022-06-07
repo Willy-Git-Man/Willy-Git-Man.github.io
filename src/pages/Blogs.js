@@ -33,7 +33,7 @@ function Blogs() {
   return (
     <Layout>
       <Helmet>
-        <title>Blogs - Chester React Personal Portfolio Template</title>
+        <title>Blogs </title>
         <meta
           name="description"
           content="Chester React Personal Portfolio Template Blogs Page"

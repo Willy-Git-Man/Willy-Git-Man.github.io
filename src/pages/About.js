@@ -93,12 +93,11 @@ function About() {
             <div className="col-lg-6">
               <div className="mi-about-content">
                 <h3>
-                  I am <span className="color-theme">{information.name}</span>
+                  <span className="color-theme">{information.name}</span>
                 </h3>
                 <p>
-                  I am a frontend web developer. I can provide clean code and
-                  pixel perfect design. I also make website more & more
-                  interactive with web animations.
+                 I'm a full stack web developer. I like to provide clean code and
+                  pixel perfect design in concert with well designed APIs across multiple stacks.
                 </p>
                 <ul>
                   {!information.name ? null : (

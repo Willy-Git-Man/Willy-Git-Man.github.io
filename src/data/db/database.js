@@ -3,13 +3,13 @@ import Mock from "../mock";
 const database = {
   information: {
     name: 'William Grossman',
-    aboutContent: "I am a full stack web developer. I can provide clean code and pixel perfect design. I also design APIs",
+    aboutContent: "I'm a full stack web developer. I can provide clean code and pixel perfect design. I also design APIs",
     age: 27,
     phone: '434-242-8614',
     nationality: 'American',
     language: 'English, Spanish',
     email: 'william.b.grossman@gmail.com',
-    address: '121 King Street, Melbourne, Australia',
+    address: 'New York, NY',
     freelanceStatus: 'Available',
     socialLinks: {
       facebook: '',
@@ -21,50 +21,50 @@ const database = {
       github: 'https://github.com/Willy-Git-Man'
     },
     brandImage: '/images/BiggerHeadShot.png',
-    aboutImage: '/images/about-image.jpg',
-    aboutImageLg: '/images/about-image-lg.jpg',
+    aboutImage: '/images/RemiWill.png',
+    aboutImageLg: '/images/RemiWill.png',
     cvfile: '/files/empty.pdf'
   },
   services: [
     {
       title: "Web Design",
       icon: 'brush-alt',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      details: "Pixel Perfect Static Websites across multiple frameworks"
     },
     {
-      title: "Web Development",
+      title: "API Design",
       icon: 'code',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      details: "Design APIs across relational and non-relational databases"
     },
     {
-      title: "Mobile Application",
+      title: "Full Stack Builds",
       icon: 'mobile',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      details: "I develop applications from first line to finished product"
     }
   ],
   reviews: [
     {
       id: 1,
-      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam, aliquid maxime tempora.",
+      content: "Will feeds me so I wrote him this review, 10/10 good dog owner",
       author: {
-        name: 'Burdette Turner',
-        designation: 'Web Developer, Abc Company'
+        name: 'Remi',
+        designation: 'Certified Good Boy'
       }
     },
     {
       id: 2,
-      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam.",
+      content: "Luck is what happens when preparation meets opportunity.",
       author: {
-        name: 'Susan Yost',
-        designation: 'Client'
+        name: 'Seneca',
+        designation: 'Philosopher'
       }
     },
     {
       id: 3,
-      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+      content: "A right Heart exceeds all.",
       author: {
-        name: 'Irving Feeney',
-        designation: 'Fiverr Client'
+        name: 'Bejamin Franklin',
+        designation: 'Poor Richard’s Almanack, 1739'
       }
     }
   ],

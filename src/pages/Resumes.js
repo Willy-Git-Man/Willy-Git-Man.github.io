@@ -3,12 +3,13 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import TrackVisibility from "react-on-screen";
 import Layout from "../components/Layout";
+import Particle from "../components/Particle";
 import Progress from "../components/Progress";
 import Resume from "../components/Resume";
 import Sectiontitle from "../components/Sectiontitle";
 import Smalltitle from "../components/Smalltitle";
 
-function Resumes() {
+function Resumes({lightMode}) {
   const [skills, setSkills] = useState([]);
   const [workingExperience, setWorkingExperience] = useState([]);
   const [educationExperience, setEducationExperience] = useState([]);
@@ -29,10 +30,13 @@ function Resumes() {
         <title>Resume</title>
         <meta
           name="description"
-          content="Chester React Personal Portfolio Template Resume Page"
+          content="Will's Portfolio"
+
         />
       </Helmet>
       <div className="mi-skills-area mi-section mi-padding-top">
+      <Particle lightMode={lightMode}/>
+
         <div className="container">
           <Sectiontitle title="My Skills" />
           <div className="mi-skills">

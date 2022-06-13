@@ -36,7 +36,8 @@ function BlogDetails(props) {
         <title>Blog Details</title>
         <meta
           name="description"
-          content="Chester React Personal Portfolio Template Blog Details Page"
+          content="Will's Portfolio"
+
         />
       </Helmet>
       <div className="mi-blog-details mi-section mi-padding-top mi-padding-bottom">

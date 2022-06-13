@@ -43,12 +43,12 @@ function App() {
       </div>
       <Routes>
         <Route path="/" index element={<Home lightMode={lightMode} />} />
-        <Route path="about" element={<About />} />
-        <Route path="resume" element={<Resumes />} />
-        <Route path="portfolios" element={<Portfolios />} />
+        <Route path="about" element={<About lightMode={lightMode}/>} />
+        <Route path="resume" element={<Resumes lightMode={lightMode}/>} />
+        <Route path="portfolios" element={<Portfolios lightMode={lightMode}/>} />
         {/* <Route path="blogs" element={<Blogs />} /> */}
         {/* <Route path="blogs/:id/:title" element={<BlogDetails />} /> */}
-        <Route path="contact" element={<Contact />} />
+        <Route path="contact" element={<Contact lightMode={lightMode}/>} />
         <Route path="*" element={<Notfound />} />
       </Routes>
     </BrowserRouter>

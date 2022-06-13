@@ -3,10 +3,11 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import Pagination from "../components/Pagination";
+import Particle from "../components/Particle";
 import PortfoliosView from "../components/PortfoliosView";
 import Sectiontitle from "../components/Sectiontitle";
 
-function Portfolios() {
+function Portfolios({lightMode}) {
   const [portfolios, setPortfoios] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [portfoliosPerPage] = useState(9);
@@ -39,10 +40,13 @@ function Portfolios() {
         <title>Portfolios </title>
         <meta
           name="description"
-          content="Chester React Personal Portfolio Template Portfolios Page"
+          content="Will's Portfolio"
+
         />
       </Helmet>
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
+      <Particle lightMode={lightMode}/>
+
         <div className="container">
           <Sectiontitle title="Portfolios" />
           {<PortfoliosView portfolios={currentPortfolios} />}

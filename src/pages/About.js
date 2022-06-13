@@ -6,11 +6,12 @@ import { Helmet } from "react-helmet";
 import ProgressiveImage from "react-progressive-image";
 import Slider from "react-slick";
 import Layout from "../components/Layout";
+import Particle from "../components/Particle";
 import Sectiontitle from "../components/Sectiontitle";
 import Service from "../components/Service";
 import Testimonial from "../components/Testimonial";
 
-function About() {
+function About({ lightMode }) {
   const [toggler, setToggler] = useState(false);
   const [information, setInformation] = useState("");
   const [services, setServices] = useState([]);
@@ -60,10 +61,12 @@ function About() {
         <title>About</title>
         <meta
           name="description"
-          content="Chester React Personal Portfolio Template About Page"
+          content="Will's Portfolio"
         />
       </Helmet>
       <div className="mi-about-area mi-section mi-padding-top">
+      <Particle lightMode={lightMode}/>
+
         <div className="container">
           <Sectiontitle title="About Me" />
           <div className="row align-items-center">

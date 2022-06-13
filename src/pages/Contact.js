@@ -3,9 +3,10 @@ import React, { useEffect, useState } from "react";
 import * as Icon from "react-feather";
 import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
+import Particle from "../components/Particle";
 import Sectiontitle from "../components/Sectiontitle";
 
-function Contact() {
+function Contact({lightMode}) {
   const [phoneNumbers, setPhoneNumbers] = useState([]);
   const [emailAddress, setEmailAddress] = useState([]);
   const [address, setAddress] = useState([]);
@@ -72,10 +73,13 @@ function Contact() {
         <title>Contact </title>
         <meta
           name="description"
-          content="Chester React Personal Portfolio Template Contact Page"
+          content="Will's Portfolio"
+
         />
       </Helmet>
       <div className="mi-contact-area mi-section mi-padding-top mi-padding-bottom">
+      <Particle lightMode={lightMode}/>
+
         <div className="container">
           <Sectiontitle title="Contact Me" />
           <div className="row">
